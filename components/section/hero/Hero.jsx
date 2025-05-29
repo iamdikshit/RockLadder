@@ -5,7 +5,7 @@ import SmallHeading from "@/components/ui/SmallHeading";
 
 const Hero = () => {
   return (
-    <div className="section-container mt-48 lg:mt-0 ">
+    <div className="section-container mt-16 md:mt-34 lg:mt-0 ">
       <div className="w-full h-screen lg:h-auto grid grid-cols-1 lg:grid-cols-2 gap-4 lg:my-16 ">
         <div className="left-section flex flex-col items-center justify-end lg:items-start lg:justify-center  gap-4">
           <SmallHeading
@@ -30,11 +30,11 @@ const Hero = () => {
         </div>
         <div className="right-section flex inter items-start lg:items-center justify-center">
           <Image
-            src={images.hero}
+            src={images.hero4}
             alt="Hero Image"
             width={800}
             height={800}
-            className="hero-image "
+            className="hero-image  "
           />
         </div>
       </div>

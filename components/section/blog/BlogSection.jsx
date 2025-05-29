@@ -11,11 +11,11 @@ const BlogSection = () => {
         "Stay updated with the latest trends, insights, and expert opinions in the world of cybersecurity through our blog section."
       }
     >
-      <div className="flex flex-col md:flex-row gap-16 md:gap-8 justify-center items-center mx-auto mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 mx-auto mt-10">
         <BlogCard
           title={"Understanding the Latest Cybersecurity Threats"}
           description={
-            "Explore the evolving landscape of cybersecurity threats and how to protect your organization from them."
+            "Explore the evolving landscape of cybersecurity threats"
           }
           image={images.p4}
           url={"#"}
@@ -26,7 +26,7 @@ const BlogSection = () => {
           description={
             "Learn about the best practices for safeguarding your data against breaches and unauthorized access."
           }
-          image={images.hero}
+          image={images.services1}
           url={"#"}
         />
         <BlogCard

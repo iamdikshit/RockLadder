@@ -31,7 +31,7 @@ const Header = () => {
           </div>
 
           {/*  Mobile button  */}
-          <div className={"mobile-button  md:hidden z-50"}>
+          <div className={"mobile-button  md:hidden z-70"}>
             <button
               onClick={menuToggle}
               className={`menu ${toggle === false ? "hidden" : ""}`}
@@ -59,8 +59,8 @@ const Header = () => {
 
       <div
         id="mobile-menu"
-        className={`absolute w-full h-screen bg-black bg-opacity-20 backdrop-blur px-4 pb-4 top-0 flex items-center justify-center  z-10 ${
-          toggle === true ? "hidden" : ""
+        className={`fixed inset-0 w-full h-screen bg-white/70 backdrop-blur-md px-4 pb-4 flex items-center justify-center z-50 transition-all duration-300 ${
+          toggle ? "hidden" : ""
         }`}
       >
         <Menu type={"mobile"} />

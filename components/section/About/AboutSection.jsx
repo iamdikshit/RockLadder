@@ -16,7 +16,12 @@ const AboutSection = () => {
     <div className="w-full h-auto curved-rectangle bg-primary-foreground flex items-center mt-24">
       <div className="section-container grid grid-cols-1 lg:grid-cols-2 gap-4 items-center justify-center py-16 pb-32">
         <div className="left mx-auto">
-          <Image src={images.hero} width={500} height={500} alt="About us" />
+          <Image
+            src={images.aboutpic}
+            width={500}
+            height={500}
+            alt="About us"
+          />
         </div>
         <div className="right ">
           <SmallHeading textColor={"text-white"} backgroundColor={"bg-white"}>

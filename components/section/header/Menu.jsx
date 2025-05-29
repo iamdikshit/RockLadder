@@ -5,10 +5,10 @@ const Menu = ({ type, footer = false }) => {
   let Linkclases = "";
   if (footer) {
     Linkclases =
-      "block text-gray-100 hover:text-gray-200 text-lg md:text-xl  py-2";
+      "block text-gray-100 hover:text-gray-200 hero-paragraph   py-2";
   } else {
     Linkclases =
-      "block text-gray-700 hover:text-[#711094]  text-lg md:text-xl  py-2";
+      "block text-gray-700 hover:text-[#711094]  hero-paragraph  py-2";
   }
   return (
     <ul
@@ -23,11 +23,14 @@ const Menu = ({ type, footer = false }) => {
         Services
       </Link>
       <Link href="#" className={`${Linkclases} `}>
-        Careers
+        About Us
+      </Link>
+      <Link href="#" className={`${Linkclases} `}>
+        Career
       </Link>
       {!footer && (
         <Button
-          variant={"outline"}
+          variant={"default"}
           className={" md:hidden text-sm sm:text-base btn"}
         >
           Contact Us

@@ -7,6 +7,8 @@ import Challenges from "@/components/section/challenges/Challenges";
 import Team from "@/components/section/team/Team";
 import BlogSection from "@/components/section/blog/BlogSection";
 
+import ContactSection from "@/components/section/contact/ContactSection";
+
 export default function Home() {
   return (
     <main className={"bg-transparent relative "}>
@@ -21,6 +23,7 @@ export default function Home() {
       <Challenges />
       <Team />
       <BlogSection />
+      <ContactSection />
       {/* Add more sections as needed */}
     </main>
   );
