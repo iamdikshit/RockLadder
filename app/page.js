@@ -14,7 +14,7 @@ export default function Home() {
     <main className={"bg-transparent relative "}>
       <section className="Header-section relative  ">
         <div className="absolute hidden  w-[800px] h-[1200px] bg-blue-400 curved-edge right-0  -z-10 "></div>
-        <Header />
+
         <Hero />
       </section>
       <Stats />

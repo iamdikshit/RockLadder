@@ -36,21 +36,21 @@ const Team = () => {
                   className="basis-full md:basis-1/2 lg:basis-1/3"
                 >
                   <div className="p-1">
-                    <Card className=" h-full p-0 overflow-hidden rounded-3xl">
-                      <div className="relative aspect-square">
+                    <Card className=" h-[500px] p-0 overflow-hidden rounded-3xl flex flex-col">
+                      <div className="relative aspect-square flex-shrink-0">
                         <Image
                           src={member.image}
                           alt={member.name}
                           fill
-                          className="w-full object-cover p-2 rounded-t-3xl" /* Ensures image covers the space */
+                          className=" object-cover p-2 rounded-t-3xl" /* Ensures image covers the space */
                           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         />
                       </div>
-                      <CardContent className="flex flex-col  items-center justify-center mx-2 pb-6">
+                      <CardContent className="flex flex-col  items-center justify-center mx-2 pb-6 flex-1">
                         <span className="text-2xl md:text-3xl font-semibold">
                           {member.name}
                         </span>
-                        <p className="hero-paragraph text-gray-600 mt-2">
+                        <p className="hero-paragraph text-gray-600 mt-2 text-center line-clamp-3">
                           {member.position}
                         </p>
                       </CardContent>

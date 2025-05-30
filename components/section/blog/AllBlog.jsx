@@ -1,17 +1,19 @@
 import React from "react";
-import CommonWrapperSection from "@/components/section/hoc/CommonWrapperSection";
+import CommonWrapperSection from "../hoc/CommonWrapperSection";
+
 import BlogCard from "./BlogCard";
 import images from "@/public";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
+
 import { IoArrowForward } from "react-icons/io5";
-const BlogSection = () => {
+const AllBlog = () => {
   return (
     <CommonWrapperSection
-      topheading={"Latest Insights"}
-      heading={"Our Latest Articles"}
+      topheading={"All Blogs"}
+      heading={"Our latest News"}
       subheading={
-        "Stay updated with the latest trends, insights, and expert opinions in the world of cybersecurity through our blog section."
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
       }
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 mx-auto mt-10">
@@ -40,10 +42,28 @@ const BlogSection = () => {
           image={images.p1}
           url={"/blog/1"}
         />
+
+        <BlogCard
+          title={"Best Practices for Data Protection in 2023"}
+          description={
+            "Learn about the best practices for safeguarding your data against breaches and unauthorized access."
+          }
+          image={images.services1}
+          url={"/blog/1"}
+        />
+
+        <BlogCard
+          title={"Best Practices for Data Protection in 2023"}
+          description={
+            "Learn about the best practices for safeguarding your data against breaches and unauthorized access."
+          }
+          image={images.services2}
+          url={"/blog/1"}
+        />
       </div>
       <div className="mt-8 flex items-center justify-center">
         <Link
-          href={"/blog"}
+          href="/blog"
           className={`${buttonVariants({ variant: "outline" })}  btn mt-8`}
         >
           <span className="hero-paragraph">View More</span>
@@ -54,4 +74,4 @@ const BlogSection = () => {
   );
 };
 
-export default BlogSection;
+export default AllBlog;

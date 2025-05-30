@@ -16,7 +16,7 @@ const ServicesCard = ({ heading, subheading, listOfServices, url }) => {
   return (
     <Card
       className={
-        "group w-full sm:w-[350px] hover:bg-primary-foreground rounded-sm flex flex-col justify-center gap-8 transition-all duration-300 ease-in-out hover:scale-105"
+        "group w-full  hover:bg-primary-foreground rounded-sm flex flex-col justify-center gap-8 transition-all duration-300 ease-in-out hover:scale-105"
       }
     >
       <CardHeader

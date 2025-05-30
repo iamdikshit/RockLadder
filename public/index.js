@@ -10,7 +10,7 @@ import aboutpic from "@/public/images/aboutpic.svg";
 import services1 from "@/public/images/services1.svg";
 import services2 from "@/public/images/services2.svg";
 import services3 from "@/public/images/services3.svg";
-
+import blog from "@/public/images/blog.png";
 const images = {
   // logo: logo,
 
@@ -24,6 +24,7 @@ const images = {
   services1: services1,
   services2: services2,
   services3: services3,
+  blog: blog,
 };
 
 export default images;

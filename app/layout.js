@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html className="overflow-y-scroll" lang="en">
       <body className={`${inter.className} $ antialiased overflow-hidden`}>
+        <Header />
         {children}
         <Footer />
       </body>

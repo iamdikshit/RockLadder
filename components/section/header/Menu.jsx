@@ -16,7 +16,7 @@ const Menu = ({ type, footer = false }) => {
         type === "mobile" ? "flex-col" : ""
       }  justify-between items-center gap-3 md:gap-8`}
     >
-      <Link href="#" className={`${Linkclases} `}>
+      <Link href="/" className={`${Linkclases} `}>
         Home
       </Link>
       <Link href="#" className={`${Linkclases} `}>

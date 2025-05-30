@@ -11,7 +11,7 @@ const Services = () => {
         "We offer a wide range of services to help you achieve your business goals. From consulting to implementation, our team of experts is here to support you every step of the way. Whether you need assistance with cybersecurity, risk management, or IT solutions, we have the expertise to deliver results."
       }
     >
-      <div className="services grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 mx-auto mt-10">
+      <div className="services grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-8 mx-auto mt-10">
         <ServicesCard
           heading={"Cybersecurity Consulting"}
           subheading={

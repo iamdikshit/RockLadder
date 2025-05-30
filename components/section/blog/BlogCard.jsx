@@ -25,7 +25,7 @@ const BlogCard = ({ title, description, url, image }) => {
         <p className="mt-2 text-gray-700 flex-1">{description}</p>
 
         <Link
-          href="#"
+          href={url}
           className={`${buttonVariants({ variant: "default" })}  btn mt-8`}
         >
           <span className="hero-paragraph">Read More</span>
